@@ -1,0 +1,14 @@
+﻿services:
+  rag-vue-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: rag-vue-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    restart: unless-stopped

@@ -1,0 +1,26 @@
+# Do not bake credentials or private runtime data into the API image.
+.env
+.env.*
+**/.env
+**/.env.*
+data
+.git
+**/.git
+
+# Keep the API build context small; frontend uses its own build context.
+frontend
+tools
+resources
+document
+img
+*.tar
+*.tar.gz
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pyc
+**/*.log
+.venv
+venv
+.vscode
+.idea

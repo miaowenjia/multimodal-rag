@@ -1,0 +1,34 @@
+# Local credentials; publish placeholders only.
+.env
+.env.*
+!.env.example
+
+# Runtime databases, uploaded documents, images and vector indexes.
+/data/
+
+# Original company documents and reference materials stay local.
+/document/公司管理/
+/resources/
+
+# Exported Docker images and bundled installers.
+*.tar
+*.tar.gz
+*.exe
+/tools/*.zip
+
+# Python and frontend build artifacts.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+.pytest_cache/
+
+# Local editor and OS files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
